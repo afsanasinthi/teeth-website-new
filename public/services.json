@@ -1,0 +1,39 @@
+[{
+        "id": 1,
+        "image": "https://thumbs.dreamstime.com/b/visiting-dentist-young-happy-girl-looking-oral-checkup-35197688.jpg",
+        "title": "P. Cleaning",
+        "desc": "A prophylaxis cleaning is a teeth cleaning procedure that is mainly used on.."
+
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/free-photo/young-woman-receiving-dental-check-up_1098-1512.jpg?size=626&ext=jpg",
+        "title": "CROWNS & BRIDGES",
+        "desc": "Scaling and root planing is often recommended for individuals who suffer fr.."
+    },
+    {
+        "id": 3,
+        "image": "https://www.hb-dds.com/wp-content/uploads/2020/11/dentist.jpg",
+        "title": "ROOT CANALS",
+        "desc": "A root canal is performed when the endodontist removes the infected pulp an.."
+    },
+    {
+        "id": 4,
+        "image": "https://img.freepik.com/free-photo/woman-patient-dentist_1303-9365.jpg?size=626&ext=jpg",
+        "title": "P. Cleaning",
+        "desc": "A prophylaxis cleaning is a teeth cleaning procedure that is mainly used on.."
+
+    },
+    {
+        "id": 5,
+        "image": "https://img.freepik.com/free-photo/woman-patient-dentist_1303-9355.jpg?size=626&ext=jpg",
+        "title": "CROWNS & BRIDGES",
+        "desc": "Scaling and root planing is often recommended for individuals who suffer fr.."
+    },
+    {
+        "id": 6,
+        "image": "https://cdn01.alison-static.net/careers/career/dentist.jpg",
+        "title": "ROOT CANALS",
+        "desc": "A root canal is performed when the endodontist removes the infected pulp an.."
+    }
+]

@@ -1,0 +1,9 @@
+.displayName {
+    display: block;
+    margin: 10px;
+    color: rgb(17, 17, 17);
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
