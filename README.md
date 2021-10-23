@@ -1,6 +1,6 @@
 # DentiCare Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-afsanasinthi).
 
 ## Introduction
 
