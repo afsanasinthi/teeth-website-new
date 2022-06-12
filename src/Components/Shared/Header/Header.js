@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import './Header.css';
 import logo from '../../../images/logo.png';
 import { Link, NavLink } from 'react-router-dom';
@@ -14,7 +14,7 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="white" variant="primary" className='nav py-2' sticky="top">
                 <Container>
-                    <NavLink as={Link}
+                    <Navbar.Brand as={Link} to="/home"><NavLink as={Link}
                         to="/"
                     >
                         <img
@@ -24,57 +24,43 @@ const Header = () => {
                             className="d-inline-block align-top"
                             alt="React Bootstrap logo"
                         />
-                    </NavLink>
-                    <Navbar.Brand as={Link} to="/home">
-
-                    </Navbar.Brand>
+                    </NavLink></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-
-                        <Nav className="ms-auto">
-                            <NavDropdown title="Menu" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.2">
-                                    <NavLink as={Link}
-                                        className=""
-                                        to="/services"
-                                        style={{ textDecoration: "none", color: "black" }}
-                                        activeStyle={{
-                                            fontWeight: "bolder",
-                                            color: "goldenRod",
-                                        }}
-                                    >
-                                        Services
-                                    </NavLink>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">
-                                    <NavLink as={Link}
-                                        className=""
-                                        to="/about"
-                                        style={{ textDecoration: "none", color: "black" }}
-                                        activeStyle={{
-                                            fontWeight: "bolder",
-                                            color: "goldenRod",
-                                        }}
-                                    >
-                                        About Us
-                                    </NavLink>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">
-                                    <NavLink as={Link}
-                                        className=""
-                                        to="/appoinment"
-                                        style={{ textDecoration: "none", color: "black" }}
-                                        activeStyle={{
-                                            fontWeight: "bolder",
-                                            color: "goldenRod",
-                                        }}
-                                    >
-                                        Appoinment
-                                    </NavLink>
-                                </NavDropdown.Item>
-
-                            </NavDropdown>
-
+                        <Nav className="me-auto">
+                            <NavLink as={Link}
+                                to="/services"
+                                style={{ textDecoration: "none", color: "primary", padding: "5px" }}
+                                activeStyle={{
+                                    fontWeight: "bolder",
+                                    color: "primary",
+                                }}
+                            >Services
+                            </NavLink>
+                            <NavLink as={Link}
+                                className=""
+                                to="/about"
+                                style={{ textDecoration: "none", color: "primary", padding: "5px" }}
+                                activeStyle={{
+                                    fontWeight: "bolder",
+                                    color: "primary",
+                                }}
+                            >
+                                About Us
+                            </NavLink>
+                            <NavLink as={Link}
+                                className=""
+                                to="/appoinment"
+                                style={{ textDecoration: "none", color: "primary", padding: "5px" }}
+                                activeStyle={{
+                                    fontWeight: "bolder",
+                                    color: "primary",
+                                }}
+                            >
+                                Appoinment
+                            </NavLink>
+                        </Nav>
+                        <Nav>
                             {
                                 user.email ?
                                     <Button onClick={logOut} variant="primary" className="  rounded-pill px-3 fw-bolder">Sign Out <FiLogOut /></Button>
@@ -87,12 +73,17 @@ const Header = () => {
                             {
                                 user?.email && user?.photoURL ? <img width="40px" className="rounded-circle ms-3 user" src={user.photoURL} alt="" /> : <span className="displayName">{user.displayName}</span>
                             }
-
+                            {/* <Nav.Link href="#deets">More deets</Nav.Link>
+                            <Nav.Link eventKey={2} href="#memes">
+                                Dank memes
+                            </Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
         </>
+
     );
 };
 
